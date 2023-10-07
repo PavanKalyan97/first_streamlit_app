@@ -1,1 +1,3 @@
-creating the main python file.
+import streamlit
+
+streamlit.title('Education is important!')
