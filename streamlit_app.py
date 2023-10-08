@@ -23,7 +23,7 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header('Fruityvice Fruit Advice')
 
-fruit_choice=streamlit.text_input('what fruit you want to choose?','kiwi' or 'banana')
+fruit_choice=streamlit.text_input('what fruit you want to choose?','kiwi')
 streamlit.write('The user entered ', fruit_choice)
 
 
@@ -43,3 +43,6 @@ my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchall()
 streamlit.header("Below is the fruits list")
 streamlit.text(my_data_row)
+
+fruit_choice1=streamlit.user_input('What fruit would you like to add','Raspberry')
+streamlit.write('User selected', fruit_choice1)
