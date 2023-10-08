@@ -23,7 +23,7 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header('Fruityvice Fruit Advice')
 
-fruit_choice=streamlit.text_input('what fruit you want to choose?','kiwi' | 'banana')
+fruit_choice=streamlit.text_input('what fruit you want to choose?','kiwi' or 'banana')
 streamlit.write('The user entered ', fruit_choice)
 
 
