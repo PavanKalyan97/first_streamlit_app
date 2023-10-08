@@ -44,5 +44,5 @@ my_data_row = my_cur.fetchall()
 streamlit.header("Below is the fruits list")
 streamlit.text(my_data_row)
 
-fruit_choice1=streamlit.user_input('What fruit would you like to add','Raspberry')
+fruit_choice1=streamlit.text_input('What fruit would you like to add','Raspberry')
 streamlit.write('User selected', fruit_choice1)
